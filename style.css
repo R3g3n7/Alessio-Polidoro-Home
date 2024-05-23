@@ -372,6 +372,13 @@ justify-content: center;
           animation: jello-horizontal 0.9s both;
 }
 
+/* Applica l'animazione ai pulsanti con le classi .button-look al tocco sui dispositivi touch */
+@media (hover: none) and (pointer: coarse) {
+  .button-look:active {
+    -webkit-animation: jello-horizontal 0.9s both;
+            animation: jello-horizontal 0.9s both;
+  }
+}
 
 a {
   text-decoration: none;
